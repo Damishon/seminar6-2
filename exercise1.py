@@ -1,5 +1,6 @@
+filename=input("File atyn engiz:")
 try:
-	file1=open('mailbox.txt')
+	file1=open(filename)
 except:
 	print('File cannot be opened')
 	exit()
@@ -13,6 +14,9 @@ for line in lines:
 		if word not in new_list:
 			new_list.append(word)
 			new_list.sort()
-print(new_list)
-file2.write(str(new_list))
+for item in new_list:
+	print(item)
+#print(new_list)
+	file2.write(item)
+	file2.write('\n')
 file1.close()
