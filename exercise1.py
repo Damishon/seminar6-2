@@ -1,6 +1,5 @@
-filename=input("File atyn engiz:")
 try:
-	file1=open(filename)
+	file1=open('mailbox.txt')
 except:
 	print('File cannot be opened')
 	exit()
